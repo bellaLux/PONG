@@ -18,7 +18,7 @@ so you'll need to change both of them if you want to resize the map.*/
 /* Same thing for the players- */
 #p1 {
     position: absolute;
-    top: 500px; left: 50px;
+    top: 375px; left: 50px;
     height: 100px; width: 20px;
     background-color: rgb(255, 255, 255);
     transition: all 1ms ease-in-out;
@@ -26,7 +26,7 @@ so you'll need to change both of them if you want to resize the map.*/
 
 #p2 {
     position: absolute;
-    top: 500px; left: 1000px;
+    top: 375px; left: 1000px;
     height: 100px; width: 20px;
     background-color: rgb(255, 255, 255);
 }
