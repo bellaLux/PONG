@@ -1,0 +1,62 @@
+
+body {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    transform: translate(25%, 2.5%); /* EASY MAP REPOSITONING HEERE */
+    height: 750px; width: 1050px;
+}
+/* These proportions are parallel to their JS mirrors, they aren't really connected
+so you'll need to change both of them if you want to resize the map.*/
+#box {
+    position: absolute; top: 0px; left: 0px;
+    height: 750px; width: 1050px;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: white; border-width: 1vmin;
+    border-style: solid;
+}
+
+/* Same thing for the players- */
+#p1 {
+    position: absolute;
+    top: 500px; left: 50px;
+    height: 100px; width: 20px;
+    background-color: rgb(255, 255, 255);
+    transition: all 1ms ease-in-out;
+}
+
+#p2 {
+    position: absolute;
+    top: 500px; left: 1000px;
+    height: 100px; width: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+/* And the ball. */
+#ball {
+    position: absolute;
+    top: 500px; left: 800px;
+    height: 30px; width: 30px; 
+    background-color: rgb(255, 255, 255);
+}
+
+/* But there are fine! */
+#texts {
+    position: absolute; top: 150px; left: 525px;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-areas: 'p p' 'p1 p2';
+    gap: 15px;
+}
+
+#texts > #pause {
+    grid-area: p;
+}
+
+#texts >  #p1score {
+    grid-area: p1;
+}
+
+#texts > #p2score {
+    grid-area: p2;
+    justify-self: end;
+}
